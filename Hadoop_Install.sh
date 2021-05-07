@@ -7,7 +7,7 @@ else
 exit 
 fi
 }
-
+#coded by it5meharsha
 
 echo -n "Enter new group for hadoop user:"
 read hdgroup
