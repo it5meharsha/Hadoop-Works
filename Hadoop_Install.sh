@@ -57,8 +57,10 @@ echo "ssh Keys created"
 hd_install() {
 download() {
                 wget http://archive.apache.org/dist/hadoop/core/hadoop-3.3.0/hadoop-3.3.0.tar.gz
+		#you can change the above url if you need anyother hadoop version 
                 sleep 2
                 tar xvfz hadoop-3.3.0.tar.gz
+		#change the hadoop version to the version your downloading 
                 sleep 2
                 mv hadoop-3.3.0 /home/$hduser/hadoop
 }
@@ -137,5 +139,6 @@ java_version_check
 ssh_keys_creation
 hd_install
 
-
+#you can comment the above 5 functions and make them independent each other (Example:if your already upto supported java version you can comment the java function (#java_Version_check)
+#this will save your time 
 
